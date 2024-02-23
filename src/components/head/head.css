@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+
+/* Variables */
+:root {
+  --transition: 0.3s;
+  min-width: 350px;
+}
+
+.transparent-text {
+  text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: table;
+    color: #2E2E45;
+    border-radius: 5px;
+    margin-left: 80px;
+    padding: 5px 10px;
+  }
+
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+  /* border: 2px solid red; */
+}
+
+a{text-decoration: none;
+color: #2E2E45;}
+
+.tegA {
+
+  color: var(--primary-color);
+}
+
+.tegA:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+  text-decoration-color: #213E60;
+
+}
+
+
+.navi {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 0rem 0.5rem 0.3rem 0rem;
+  background-color: #D8D1BD;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+
+
+.navi ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 260px;
+  margin-right: 30px;
+  font-family: 'Montserrat Light';
+  color: #2E2E45;
+}
+
+
+.navi ul li {
+  margin-right: 1rem; /* Adjust spacing between items */
+}
+
+.navi ul li:last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
+
+.navi ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.navi ul li a:hover {
+  color: #F4F2EF; /* Измените на желаемый цвет */
+}
+
+@media screen and (max-width: 460px) {
+  .transparent-text {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .transparent-text {
+    font-size: 20px;
+    margin-top: 0%;
+    margin-left: 10%;
+  }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 720px) {
+  .transparent-text {
+    margin-left: 7%;
+  }
+
+  .bio {
+    margin-top: -7rem;
+    width: 20.5rem;
+  }
+
+  .more-about {
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+  }
+
+  .icon {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    width: 20.875rem;
+  }
+
+  .contact-form-container {
+    max-width: 23.75rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .transparent-text {
+    font-size: 20px;
+  }
+
+  .bio {
+    width: 18.3rem;
+  }
+
+  .project-container {
+    width: 17.875rem;
+  }
+
+  .contact-form-container {
+    max-width: 17.75rem;
+  }
+}
